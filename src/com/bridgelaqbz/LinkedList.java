@@ -47,4 +47,17 @@ public class LinkedList {
             temp.next = newNode;
         }
     }
+    /*
+     * This is the method to delete first element
+     */
+    public void deleteFirst() {
+        // list is empty
+        if (head == null)
+            System.out.println("Nothing to delete..");
+            // list is not empty
+        else {
+            Node temp = head;
+            head = temp.next;
+        }
+    }
 }
