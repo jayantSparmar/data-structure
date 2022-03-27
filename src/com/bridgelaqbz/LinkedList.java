@@ -80,5 +80,27 @@ public class LinkedList {
             temp.next = null;
         }
     }
+    /*
+     * This is the method to display elements
+     */
+    public void display() {
+        // list is empty
+        if (head == null)
+            System.out.println("No elements to display.");
 
+
+            // list is not empty
+        else {
+            Node temp = head;
+            // traverse up to null elements
+            while (temp != null) {
+                if (temp.next != null)
+                    System.out.print(temp.data + " => ");
+                else
+                    // display data
+                    System.out.println(temp.data);
+                temp = temp.next;
+            }
+        }
+    }
 }
